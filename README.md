@@ -6,7 +6,7 @@
 
 # 🚀 Irma
 
-> A beautiful, responsive personal timeline website with scroll-triggered animations and Google Sheets integration.
+> A beautiful, responsive personal timeline website with scroll-triggered animations, custom color palette, and WhatsApp integration.
 
 ---
 
