@@ -4,7 +4,7 @@
 
 </p>
 
-# 🚀 Nes
+# 🚀 Irma
 
 > A beautiful, responsive personal timeline website with scroll-triggered animations and Google Sheets integration.
 
@@ -12,7 +12,7 @@
 
 ## 📖 Description
 
-Nes is a dynamic personal timeline website that showcases your journey, projects, and social presence. It features smooth scroll animations, dark/light mode, and seamless integration with Google Sheets for easy content management without code changes.
+Irma is a dynamic personal timeline website that showcases your journey, projects, and social presence. It features smooth scroll animations, dark/light mode, and seamless integration with Google Sheets for easy content management without code changes.
 
 What makes it unique:
 - Google Sheets integration for content management
@@ -65,10 +65,10 @@ Google Sheets → CSV → App Fetch → Display Timeline → GitHub API → Proj
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/nes.git
+git clone https://github.com/yourusername/irma.git
 
 # Navigate to project
-cd nes
+cd irma
 
 # Install dependencies
 npm install
@@ -108,14 +108,14 @@ export const CONFIG = {
 ## 🎥 Demo
 
 * **Live Demo:** [Deployed on Vercel]
-* **Contact:** WhatsApp - [+62812345678](https://wa.me/62812345678)
+* **Contact:** WhatsApp - [+62 856-1027-824](https://wa.me/628561027824)
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-nes/
+irma/
 ├── src/
 │   ├── components/
 │   │   ├── ui/

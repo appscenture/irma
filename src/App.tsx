@@ -141,7 +141,7 @@ function App() {
   // Reset cursor text when clicking elsewhere
   useEffect(() => {
     const handleClick = () => {
-      if (typeof cursorText !== 'string' || (cursorText !== "" && !cursorText.includes("Nes"))) {
+      if (typeof cursorText !== 'string' || (cursorText !== "" && !cursorText.includes("Irma"))) {
         setCursorText("");
       }
     }
@@ -333,12 +333,13 @@ function App() {
 
 *Name:* ${formData.name}
 *Email:* ${formData.email}
+*WhatsApp:* ${formData.whatsapp}
 
 *Inquiry:*
 ${cleanInquiry}`;
 
                 // Generate WhatsApp link
-                const phoneNumber = formData.whatsapp.replace(/[^\d+]/g, "");
+                const phoneNumber = "628561027824";
                 const encodedMessage = encodeURIComponent(message);
                 const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
@@ -348,14 +349,14 @@ ${cleanInquiry}`;
                 // Reset form
                 setFormData({ name: "", email: "", whatsapp: "", inquiry: "" });
               }}
-              className="w-full bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white font-semibold py-3 rounded-lg transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+              className="w-full bg-gradient-to-r from-irma-1 to-irma-10 hover:from-irma-2 hover:to-irma-9 text-white font-semibold py-3 rounded-lg transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
             >
               <Send className="w-4 h-4" />
               Send via WhatsApp
             </button>
 
             {messageCode && (
-              <div className="mt-4 p-3 bg-purple-100 dark:bg-purple-900/30 rounded-lg text-sm text-purple-800 dark:text-purple-300 text-center font-mono font-bold">
+              <div className="mt-4 p-3 bg-irma-1/20 dark:bg-irma-1/30 rounded-lg text-sm text-irma-1 dark:text-irma-1 text-center font-mono font-bold">
                 {messageCode}
               </div>
             )}
@@ -386,7 +387,7 @@ ${cleanInquiry}`;
                   <span className="font-bold text-sm">{cursorText}</span>
                 ) : cursorText
               ) : (
-                <span className="font-bold text-sm">{headerData?.title || "Nes"}</span>
+                <span className="font-bold text-sm">{headerData?.title || "Irma"}</span>
               )
             }
             className="w-full"
@@ -399,13 +400,13 @@ ${cleanInquiry}`;
                 image: headerData.image ? headerData.image[0] : undefined
               } : undefined}
               socialLinks={[
-                { icon: MapPin, text: "Jakarta, ID", href: "https://share.google/Zm0w9TKUvV5ImyE4l" },
-                { icon: Mail, text: "nes@gmail.com", href: "mailto:Nes@gmail.com" },
-                { icon: Phone, text: "+62 812345678", href: "tel:+62812345678" },
-                { icon: Instagram, text: "nezvita", href: "https://instagram.com/nezvita" },
-                { icon: Linkedin, text: "in/nezvita", href: "https://linkedin.com/in/nezvita" },
-                { icon: Globe, text: "Nes", href: "https://nezvita.vercel.app" },
-                { icon: MessageCircle, text: "Discord", href: "https://discord.gg/nezvita" },
+                { icon: MapPin, text: "Bogor, ID", href: "https://share.google/Zm0w9TKUvV5ImyE4l" },
+                { icon: Mail, text: "irmasafitri147@yahoo.co.id", href: "mailto:irmasafitri147@yahoo.co.id" },
+                { icon: Phone, text: "+62 856-1027-824", href: "tel:+628561027824" },
+                { icon: Instagram, text: "nezvita", href: "https://instagram.com/irmasafitri" },
+                { icon: Linkedin, text: "in/nezvita", href: "https://linkedin.com/in/irmasafitri" },
+                { icon: Globe, text: "Irma", href: "https://irmasafitri.vercel.app" },
+                { icon: MessageCircle, text: "WhatsApp", href: "https://wa.me/628561027824" },
               ]}
               onLinkHover={(text) => setCursorText(text || "")}
             />
@@ -421,7 +422,7 @@ ${cleanInquiry}`;
         {/* Floating Contact Bar */}
         <div className="glow-border fixed bottom-4 left-1/2 -translate-x-1/2 z-40 flex gap-2 bg-white dark:bg-neutral-900 rounded-full px-2 py-2 shadow-lg border border-neutral-200 dark:border-neutral-800">
           <a
-            href="mailto:nes@gmail.com"
+            href="mailto:irmasafitri147@yahoo.co.id"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-8 h-8 rounded-full bg-neutral-50 dark:bg-neutral-800 hover:bg-purple-100 dark:hover:bg-purple-900/40 transition-colors text-neutral-700 dark:text-neutral-300 hover:text-purple-600 dark:hover:text-purple-400"
@@ -430,7 +431,7 @@ ${cleanInquiry}`;
             <Mail className="w-4 h-4" />
           </a>
           <a
-            href="tel:+62812345678"
+            href="tel:+628561027824"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-8 h-8 rounded-full bg-neutral-50 dark:bg-neutral-800 hover:bg-purple-100 dark:hover:bg-purple-900/40 transition-colors text-neutral-700 dark:text-neutral-300 hover:text-purple-600 dark:hover:text-purple-400"
@@ -448,7 +449,7 @@ ${cleanInquiry}`;
             <Instagram className="w-4 h-4" />
           </a>
           <a
-            href="https://wa.me/62812345678"
+            href="https://wa.me/628561027824"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-8 h-8 rounded-full bg-neutral-50 dark:bg-neutral-800 hover:bg-purple-100 dark:hover:bg-purple-900/40 transition-colors text-neutral-700 dark:text-neutral-300 hover:text-purple-600 dark:hover:text-purple-400"

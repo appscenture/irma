@@ -40,6 +40,18 @@ export default {
                 card: {
                     DEFAULT: 'hsl(var(--card))',
                     foreground: 'hsl(var(--card-foreground))'
+                },
+                irma: {
+                    1: '#E574BC',
+                    2: '#EA84C9',
+                    3: '#EF94D5',
+                    4: '#F9B4ED',
+                    5: '#EABAF6',
+                    6: '#DABFFF',
+                    7: '#C4C7FF',
+                    8: '#ADCFFF',
+                    9: '#96D7FF',
+                    10: '#7FDEFF'
                 }
             },
             borderRadius: {
